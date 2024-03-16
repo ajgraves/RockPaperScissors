@@ -67,7 +67,7 @@ struct ContentView: View {
                 Spacer()
                 
                 VStack(spacing: 15) {
-                    HStack {
+                    HStack(spacing: 30) {
                         VStack {
                             Text("The app chose")
                                 .font(.subheadline.weight(.heavy))
@@ -77,7 +77,7 @@ struct ContentView: View {
                         }
                         
                         VStack {
-                            Text("And you are to")
+                            Text("And you should")
                                 .font(.subheadline.weight(.heavy))
                             
                             Text(userShouldWin ? "WIN" : "LOSE")
